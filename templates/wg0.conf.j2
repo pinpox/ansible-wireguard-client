@@ -1,0 +1,10 @@
+[Interface]
+PrivateKey = {{wireguard_client_privkey}}
+Address = {{wireguard_ip}}/24
+DNS = {{wireguard_client_dns}}
+
+[Peer]
+PublicKey = {{wireguard_client_server_pubkey}}
+AllowedIPs = {{wireguard_client_server_ip}}/24
+Endpoint = {{wireguard_client_server_endpoint}}:{{wireguard_client_server_port}}
+PersistentKeepalive = 25
